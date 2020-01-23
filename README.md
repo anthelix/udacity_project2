@@ -4,7 +4,7 @@
 # Project 1 : Data Modeling with Cassandra
 
 
-<img alt="" align="right" width="150" height="150" src = "./image/cassandraLogo.png" title = "cassandra logo" alt = "Cassandra logo">   
+<img alt="" align="right" src = "./image/cassandraLogo.png" title = "cassandra logo" alt = "Cassandra logo">   
 
 About an ETL, collecting .json files, and modeling a database with Cassandra
 
