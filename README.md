@@ -21,7 +21,7 @@ About an ETL and modeling event data to create a non-relational database and ETL
       - [Build ETL pipeline](#build-etl-pipeline)
    - [Workspace](#workspace)
       - [My environnemets](#my-environements)
-      - [Discuss about the databases](#discuss-about-the-database)
+      - [Discuss about the database](#discuss-about-the-database)
       - [Erd](#erd)
       - [Queries](#queries)
       - [Weblinks](#web-links)
@@ -86,6 +86,10 @@ The project template includes one Jupyter Notebook file, in which:
 
 * I create an anaconda environemet 'cassand3' with python=3.6
 * check the java version
+  * `java --version`
+* Install Pandas, numpy, cassandra driver
+  * `pip install pandas`
+  * `pip install cassandra-driver`
 * Install cassandra
   *  https://www-us.apache.org/dist/cassandra/3.11.5/apache-cassandra-3.11.5-bin.tar.gz
   * cd ~/Telechargement
@@ -97,14 +101,17 @@ The project template includes one Jupyter Notebook file, in which:
   * sudo mkdir /var/lib/cassandra/commitlog
   * sudo mkdir /var/lib/cassandra/data
   * sudo mkdir /var/log/cassandra/
-  * sudo chown -R <USER> /var/lib/cassandra/ /var/log/cassandra/  
+  * sudo chown -R <USER> /var/lib/cassandra/ /var/log/cassandra/  *   
   _modifier le path dans .zshrc_
   * export CASSANDRA_HOME=/opt/cassandra
   * export PATH=$PATH:$CASSANDRA_HOME/bin:$CASSANDRA_HOME/sbin
 * To work each time
-  *  conda activate cassand
-  *  pip install cassandra-driver
+  *  conda activate cassand3
   * cd /opt/cassandra
   * bin/cassandra -f #start cassandra
 * /opt/cassandra/bin/nodetool status # cassandra is running?
   * start anaconda-navigator for Jupyter notebook
+
+### Discuss about the database
+
+![diagram UML](./image/Music_library1.png)
