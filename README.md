@@ -167,10 +167,10 @@ for row in rows:
 ```
 ### Weblinks
 
-[Using the Chebotko Method](https://fr.slideshare.net/ArtemChebotko/using-the-chebotko-method-to-design-sound-and-scalable-data-models-for-apache-cassandra)
-[Rigorous Cassandra Data Modeling](https://fr.slideshare.net/ArtemChebotko/rigorous-cassandra-data-modeling-for-the-relational-data-architect)
-[Data Modeling in Cassandra](https://www.baeldung.com/cassandra-data-modeling)
-[Data Types](http://cassandra.apache.org/doc/latest/cql/types.html)
-[The Simplest Way to Visualize Concept](https://creately.com/)
-[Cassandra Performance](https://www.scnsoft.com/blog/cassandra-performance#data-modeling)
-[Designing a Cassandra Data Model](https://shermandigital.com/blog/designing-a-cassandra-data-model/)
+[Using the Chebotko Method](https://fr.slideshare.net/ArtemChebotko/using-the-chebotko-method-to-design-sound-and-scalable-data-models-for-apache-cassandra)  
+[Rigorous Cassandra Data Modeling](https://fr.slideshare.net/ArtemChebotko/rigorous-cassandra-data-modeling-for-the-relational-data-architect)  
+[Data Modeling in Cassandra](https://www.baeldung.com/cassandra-data-modeling)  
+[Data Types](http://cassandra.apache.org/doc/latest/cql/types.html)  
+[The Simplest Way to Visualize Concept](https://creately.com/)  
+[Cassandra Performance](https://www.scnsoft.com/blog/cassandra-performance#data-modeling)  
+[Designing a Cassandra Data Model](https://shermandigital.com/blog/designing-a-cassandra-data-model/)  
