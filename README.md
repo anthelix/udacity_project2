@@ -22,7 +22,8 @@ About an ETL and modeling event data to create a non-relational database and ETL
    - [Workspace](#workspace)
       - [My environnemets](#my-environements)
       - [Discuss about the database](#discuss-about-the-database)
-      - [Erd](#erd)
+      - [UML diagram](#uml-diagram)
+      - [Chebotko diagram](#chebotko-diagram)
       - [Queries](#queries)
       - [Weblinks](#web-links)
   - [TODO](#todo)
@@ -114,4 +115,62 @@ The project template includes one Jupyter Notebook file, in which:
 
 ### Discuss about the database
 
-![diagram UML](./image/Music_library1.png)
+
+
+### UML diagram  
+![diagram UML](./image/erd_project2.png)  
+To take stock of the data, I've drawn a UML diagram that allows me to identify 3 entities and their attributes. 
+
+### Chebotko diagram
+![Mapping Rules](./image/mappingRules.png)  
+
+
+From this point, I used the method of the diagram chebokto to answer the 3 queries by looking for each time **the attributes one possesses, query predicate (k) and ordering attributes (C)** for the primary key and **desired attributes** for what we looking for.  
+
+
+![diagram chabokto](./image/quer1.png)  
+
+
+Then, it helps me to design every query    
+
+
+![diagram chabokto](./image/query1_table.png)  
+
+### Queries
+```sql
+# create table for the first query
+query = "CREATE TABLE IF NOT EXISTS song_by_session"
+query = query + "(sessionId INT, itemInSession INT, artist VARCHAR, song VARCHAR, length DECIMAL, PRIMARY KEY(sessionId, itemInSession))"
+```
+```python
+# insert data
+ file = 'event_datafile_new.csv'
+
+with open(file, encoding = 'utf8') as f:
+    csvreader = csv.reader(f)
+    next(csvreader) # skip header
+    for line in csvreader:
+        query = "INSERT INTO song_by_session(sessionId, itemInSession, artist, song, length)"
+        query = query + "VALUES (%s, %s, %s, %s, %s)"
+        session.execute(query, (int(line[8]), int(line[3]), line[0], line[9], float(line[5])))
+```
+```python
+# Query
+query = "SELECT * FROM song_by_session WHERE sessionId = 338 AND itemInSession = 4"
+try:
+    rows = session.execute(query)
+except Exception as e:
+    print(e)
+    
+for row in rows:
+    print (row.artist,"---", row.song,"---" ,row.length)
+```
+### Weblinks
+
+[Using the Chebotko Method](https://fr.slideshare.net/ArtemChebotko/using-the-chebotko-method-to-design-sound-and-scalable-data-models-for-apache-cassandra)
+[Rigorous Cassandra Data Modeling](https://fr.slideshare.net/ArtemChebotko/rigorous-cassandra-data-modeling-for-the-relational-data-architect)
+[Data Modeling in Cassandra](https://www.baeldung.com/cassandra-data-modeling)
+[Data Types](http://cassandra.apache.org/doc/latest/cql/types.html)
+[The Simplest Way to Visualize Concept](https://creately.com/)
+[Cassandra Performance](https://www.scnsoft.com/blog/cassandra-performance#data-modeling)
+[Designing a Cassandra Data Model](https://shermandigital.com/blog/designing-a-cassandra-data-model/)
