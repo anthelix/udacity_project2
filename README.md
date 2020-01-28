@@ -1,9 +1,9 @@
 <img alt="" align="right" width="150" height="150" src = "./image/cassandraLogo.png" title = "cassandra logo" alt = "Cassandra logo"> 
-##### Udacity Data Engineering Nanodegree
 
+##### Udacity Data Engineering Nanodegree
+</br>
 
 # Project 2 : Data Modeling with Cassandra
-
 About ETL and event data modeling to create a non-relational database and ETL pipeline for a music streaming application. We define queries and tables for a database built using Apache Cassandra.  
 
 ### Table of contents
