@@ -5,8 +5,6 @@
 </br>
 </br>
 </br>
-</br>
-</br>
 
 # Project 2 : Data Modeling with Cassandra
 
