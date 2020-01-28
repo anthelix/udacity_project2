@@ -47,7 +47,9 @@ We will need to creating tables in Apache Cassandra to run queries.
 
 ## Getting started
 
-* 
+* Start Cassandra and Jupyter Notebook
+* Open `Project2_cassandraModeling.ipynb`
+* Make sure you have drop the tables and closed (statements at the end of the file) the connection before leaving `Project2_cassandraModeling.ipynb`.
 
 ## Ressources
 
