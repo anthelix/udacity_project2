@@ -91,8 +91,9 @@ The project template includes one Jupyter Notebook file, in which:
 ### My environnemets
 
 * I create an anaconda environemet 'cassand3' with python=3.6
+  * `conda create -n cassand3 python=3.6`
 * check the java version
-  * `java --version`
+  * `java -version`
 * Install Pandas, numpy, cassandra driver
   * `pip install pandas`
   * `pip install cassandra-driver`
@@ -107,7 +108,7 @@ The project template includes one Jupyter Notebook file, in which:
   * sudo mkdir /var/lib/cassandra/commitlog
   * sudo mkdir /var/lib/cassandra/data
   * sudo mkdir /var/log/cassandra/
-  * sudo chown -R <USER> /var/lib/cassandra/ /var/log/cassandra/  *   
+  * sudo chown -R \<USER\> /var/lib/cassandra/ /var/log/cassandra/*   
   _modifier le path dans .zshrc_
   * export CASSANDRA_HOME=/opt/cassandra
   * export PATH=$PATH:$CASSANDRA_HOME/bin:$CASSANDRA_HOME/sbin
