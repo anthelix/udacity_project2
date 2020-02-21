@@ -1,7 +1,8 @@
 ##### Udacity Data Engineering Nanodegree
 <img alt="" align="right" width="150" height="150" src = "./image/cassandraLogo.png" title = "cassandra logo" alt = "Cassandra logo">   
 
-
+</br>
+</br>
 
 # Project 2 : Data Modeling with Cassandra
 
