@@ -30,7 +30,7 @@ About ETL and event data modeling to create a non-relational database and ETL pi
       - [UML diagram](#uml-diagram)
       - [Chebotko diagram](#chebotko-diagram)
       - [Queries](#queries)
-      - [Web-links](#web-links)
+   - [Web-links](#web-links)
 <!--CACHER-->
 
 ## About the project
@@ -171,7 +171,7 @@ except Exception as e:
 for row in rows:
     print (row.artist,"---", row.song,"---" ,row.length)
 ```
-### Web-links
+## Web-links
 
 [Using the Chebotko Method](https://fr.slideshare.net/ArtemChebotko/using-the-chebotko-method-to-design-sound-and-scalable-data-models-for-apache-cassandra)  
 [Rigorous Cassandra Data Modeling](https://fr.slideshare.net/ArtemChebotko/rigorous-cassandra-data-modeling-for-the-relational-data-architect)  
